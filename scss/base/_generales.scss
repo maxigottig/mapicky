@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body{
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+.fixed{
+    position: fixed;
+    right: 40px;
+    bottom: 5px;
+    img{
+        width: 70px;
+        height: 70px;
+    }
+}

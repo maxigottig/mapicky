@@ -182,10 +182,10 @@ header nav form .boton:hover{
     padding: 10px;
 }
 
-.nosotros .nosotros-box{
+/* .nosotros .nosotros-box{
     display: flex;
     align-items: stretch;
-}
+} /*
 
 /*--BELU--*/
 
@@ -293,11 +293,11 @@ header nav form .boton:hover{
     align-items: center;
 }
 
-.equipo div h2{
+.equipo .equipo-foto h2{
     font-size: 35px;
 }
 
-.equipo div{
+.equipo .equipo-foto{
     width: 50%;
     margin: 50px;
 }
@@ -849,9 +849,9 @@ footer div img:hover{
     header{
         flex-direction: column;
     }
-    .bienvenidos img{
+    /*.bienvenidos img{
         width: 100%;
-    }
+    }*/
     .plataformas .google iframe{
         width: 100%;
     }
