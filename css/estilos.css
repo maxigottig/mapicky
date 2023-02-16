@@ -70,8 +70,8 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
   align-items: center; }
   .hero h2 {
@@ -539,8 +539,7 @@ footer {
     flex-direction: column; } }
 
 @media screen and (max-width: 600px) {
-  .nuestro-objetivo
-div img {
+  .nuestro-objetivo div img {
     width: 100%;
     height: 100%; }
   .objetivo img {
@@ -573,3 +572,38 @@ div img {
     width: 100%; }
   .plataformas .programmatic iframe {
     width: 100%; } }
+
+.nosotros .nosotros-belu, .nosotros .nosotros-maxi {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nosotros .nosotros-belu {
+  background: #fbffc7;
+  background: linear-gradient(275deg, #fbffc7 0%, #cfc6b8 100%);
+  padding: 40px; }
+
+.nosotros .nosotros-maxi {
+  background: #fbffc7;
+  background: linear-gradient(275deg, #fbffc7 0%, #cfc6b8 100%);
+  padding: 40px; }
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.hero {
+  color: white; }
+
+.nosotros-belu {
+  background: #fbffc7; }
+
+.nosotros-nicky {
+  background: #fbffc7; }
+
+.nosotros-maxi {
+  background: #fbffc7; }
+
+.registro {
+  background: #e8eeb7; }

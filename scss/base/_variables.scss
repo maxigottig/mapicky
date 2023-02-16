@@ -1,0 +1,69 @@
+//* EXTENDS
+
+// % PLACEHOLDER
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros .nosotros-belu{
+    background: rgb(251, 255, 199);
+    background: linear-gradient(275deg, rgba(251, 255, 199, 1) 0%, rgba(207, 198, 184, 1) 100%);    
+    padding: 40px;
+    @extend %flex;
+}
+
+.nosotros .nosotros-maxi{
+    background: rgb(251, 255, 199);
+    background: linear-gradient(275deg, rgba(251, 255, 199, 1) 0%, rgba(207, 198, 184, 1) 100%);
+    padding: 40px;
+    @extend %flex;
+}
+
+//* MIXINS
+
+@mixin flex ($flex, $justify, $align){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.hero{
+    @include flex (flex, center, center);
+}
+
+//* LISTAS
+
+$colores:
+white,
+rgba(48, 43, 43, 0.699),
+rgb(87, 57, 39),
+rgb(251, 255, 199),
+rgb(156, 171, 180),
+rgb(232,238,183),
+rgb(253, 254, 247);
+
+.hero{
+    color: nth($colores, 1);
+}
+
+.nosotros-belu{
+    background: nth($colores, 4);
+}
+
+.nosotros-nicky{
+    background: nth($colores, 4);
+}
+
+.nosotros-maxi{
+    background: nth($colores, 4);
+}
+
+.registro{
+    background: nth($colores, 6);
+}
+
+
+
