@@ -109,17 +109,19 @@ header {
     width: 600px;
     height: 500px; }
 
-main .equipo {
+.equipo {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center; }
-  main .equipo .equipo-foto {
+  .equipo div {
     width: 50%;
     margin: 50px; }
-    main .equipo .equipo-foto h2 {
+    .equipo div h2 {
       font-size: 35px; }
-  main .equipo .equipo-foto img {
+    .equipo div p {
+      margin: 0;
+      padding: 0; }
+  .equipo img {
     width: 700px;
     height: 500px; }
 
@@ -326,17 +328,19 @@ main .equipo {
         color: rgba(46, 43, 37, 0.747);
         background-color: white; }
 
-main .nuestro-objetivo {
+.nuestro-objetivo {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center; }
-  main .nuestro-objetivo .nuestro-objetivo-foto {
+  .nuestro-objetivo div {
     width: 50%;
     margin: 50px; }
-    main .nuestro-objetivo .nuestro-objetivo-foto h2 {
+    .nuestro-objetivo div h2 {
       font-size: 35px; }
-  main .nuestro-objetivo img {
+    .nuestro-objetivo div p {
+      margin: 0;
+      padding: 0; }
+  .nuestro-objetivo img {
     width: 600px;
     height: 500px; }
 
@@ -388,13 +392,12 @@ footer {
 
 @media screen and (max-width: 991px) {
   header div nav .container-fluid .barra {
-    flex-direction: column; } }
-
-main .equipo {
-  flex-direction: column; }
-  main .equipo div {
-    width: 80%;
-    text-align: center; }
+    flex-direction: column; }
+  .equipo {
+    flex-direction: column; }
+    .equipo div {
+      width: 80%;
+      text-align: center; } }
 
 @media screen and (max-width: 975px) {
   .galeria {
@@ -416,22 +419,19 @@ main .equipo {
     flex-direction: column; }
     .objetivo div {
       width: 80%;
-      text-align: center; } }
-
-.plataformas .google {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px; }
-
-.plataformas .facebook {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px; }
-
-.plataformas .programmatic {
-  flex-direction: column;
-  align-items: center;
-  padding: 10px; }
+      text-align: center; }
+  .plataformas .google {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+  .plataformas .facebook {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; }
+  .plataformas .programmatic {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; } }
 
 @media screen and (max-width: 850px) {
   .contactate {

@@ -65,32 +65,28 @@
     }
 }
 
-main{
-    .equipo {
+.equipo {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
     
-        .equipo-foto{
+        div{
             width: 50%;
             margin: 50px;
     
             h2 {
                 font-size: 35px;
             }
+            p{
+                margin: 0;
+                padding: 0;
+            }
         }
-        .equipo-foto{
             img {
                 width: 700px;
                 height: 500px;
             }
-        }
     }
-}
-
-
-
 
 .nosotros {
     h2 {
@@ -373,25 +369,28 @@ main{
     }
 }
 
-main{
-    .nuestro-objetivo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    
-        .nuestro-objetivo-foto {
-            width: 50%;
-            margin: 50px;
-    
-            h2 {
-                font-size: 35px;
-            }   
+.nuestro-objetivo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        width: 50%;
+        margin: 50px;
+
+        h2 {
+            font-size: 35px;
         }
-        img {
-            width: 600px;
-            height: 500px;
+
+        p {
+            margin: 0;
+            padding: 0;
         }
+    }
+
+    img {
+        width: 600px;
+        height: 500px;
     }
 }
 
