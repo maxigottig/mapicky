@@ -26,13 +26,12 @@
         grid-template-rows: 220px;
         .grid-galeria{
             grid-column: span 1;
-            grid-row: span 1;
-            img{
-                .img-9{
-                    grid-column: span 2;
-                }
-            }
+            grid-row: span 1; 
         }
+        .img-9{
+            grid-column: span 2;
+            }
+        
     }
     .nuestro-objetivo{
         flex-direction: column;

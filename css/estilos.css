@@ -350,26 +350,70 @@ header {
   grid-auto-rows: 250px;
   gap: 20px;
   max-width: 1780px; }
-  .galeria .grid-galeria {
+  .galeria .grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
     transition: 1s; }
-    .galeria .grid-galeria img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
-      -webkit-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75); }
-      .galeria .grid-galeria img .img-1 {
-        grid-column: span 2; }
-      .galeria .grid-galeria img .img-6 {
-        grid-column: span 2; }
-      .galeria .grid-galeria img .img-7 {
-        grid-row: span 2; }
-      .galeria .grid-galeria img:hover {
-        transform: scale(1.01);
-        box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
-        -webkit-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
-        -moz-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75); }
+    .galeria .grid-galeria img:hover {
+      transform: scale(1.01);
+      box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
+      -webkit-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
+      -moz-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75); }
+  .galeria .img-1 {
+    grid-column: span 2; }
+  .galeria .img-6 {
+    grid-column: span 2; }
+  .galeria .img-7 {
+    grid-row: span 2; }
+
+.contactate {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contactate div {
+    width: 50%;
+    margin: 50px; }
+    .contactate div h2 {
+      font-size: 35px; }
+  .contactate img {
+    width: 600px;
+    height: 500px; }
+
+.contacto h2 {
+  font-size: 35px;
+  color: white;
+  background: #9cabb4;
+  background: radial-gradient(circle, #9cabb4 0%, rgba(247, 235, 216, 0.790354) 100%);
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 1s; }
+
+.contacto .registro {
+  background: #e8eeb7;
+  background: linear-gradient(279deg, rgba(232, 238, 183, 0.714723) 0%, #d6cdc3 76%);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .contacto .registro .nombre {
+    margin: 5px;
+    padding: 5px; }
+  .contacto .registro .apellido {
+    margin: 5px;
+    padding: 5px; }
+  .contacto .registro .email {
+    margin: 5px;
+    padding: 5px; }
 
 footer {
   display: flex;
@@ -406,8 +450,8 @@ footer {
     .galeria .grid-galeria {
       grid-column: span 1;
       grid-row: span 1; }
-      .galeria .grid-galeria img .img-9 {
-        grid-column: span 2; }
+    .galeria .img-9 {
+      grid-column: span 2; }
   .nuestro-objetivo {
     flex-direction: column; }
     .nuestro-objetivo div {

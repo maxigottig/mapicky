@@ -403,7 +403,6 @@
     max-width: 1780px;
 
     .grid-galeria {
-        transition: 1s;
 
         img {
             width: 100%;
@@ -412,18 +411,7 @@
             box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 27px -5px rgba(0, 0, 0, 0.75);
-
-            .img-1 {
-                grid-column: span 2;
-            }
-
-            .img-6 {
-                grid-column: span 2;
-            }
-
-            .img-7 {
-                grid-row: span 2;
-            }
+            transition: 1s;
 
             &:hover {
                 transform: scale(1.01);
@@ -431,6 +419,76 @@
                 -webkit-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
                 -moz-box-shadow: 10px 10px 5px -3px rgba(133, 131, 131, 0.75);
             }
+        }
+    }
+
+        .img-1 {
+            grid-column: span 2;
+        }
+
+        .img-6 {
+            grid-column: span 2;
+        }
+
+        .img-7 {
+            grid-row: span 2;
+        }
+
+
+
+    
+}
+.contactate{
+display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        width: 50%;
+        margin: 50px;
+        h2{
+            font-size: 35px;
+        }
+    }
+    img{
+        width: 600px;
+        height: 500px;
+    }
+}
+.contacto{
+    h2{
+        font-size: 35px;
+        color: white;
+        background: rgb(156,171,180);
+        background: radial-gradient(circle, rgba(156,171,180,1) 0%, rgba(247,235,216,0.7903536414565826) 100%);
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+        animation-name: slidein;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-direction: initial;
+        animation-delay: 1s;
+    }
+    .registro{
+        background: rgb(232,238,183);
+        background: linear-gradient(279deg, rgba(232,238,183,0.7147233893557423) 0%, rgba(214,205,195,1) 76%);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        .nombre{
+            margin: 5px;
+            padding: 5px;
+        }
+        .apellido{
+            margin: 5px;
+            padding: 5px;
+        }
+        .email{
+            margin: 5px;
+            padding: 5px;
         }
     }
 }
